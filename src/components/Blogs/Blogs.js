@@ -22,14 +22,7 @@ const Blogs = () => {
     Specifically, semantic tags make it clear to the browser what the meaning of a page and its content is. That clarity is also communicated with search engines, ensuring that the right pages are delivered for the right queries.
     </Accordion.Body>
   </Accordion.Item>
-  <Accordion.Item eventKey="2">
-    <Accordion.Header><h3 className='fw-bold'>What is Semantic Tag?</h3></Accordion.Header>
-    <Accordion.Body>
-    A semantic tag in HTML is a tag whose name clearly describes its purpose and content.
-    In other terms semantic tags are those tags whose name can easily let you know which type of content take place in it. For example header, section, article and footer
-    Specifically, semantic tags make it clear to the browser what the meaning of a page and its content is. That clarity is also communicated with search engines, ensuring that the right pages are delivered for the right queries.
-    </Accordion.Body>
-  </Accordion.Item>
+  
 </Accordion>
            </div>
         </div>

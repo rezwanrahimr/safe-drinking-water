@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import useReviews from '../../Hook/useReviews';
-import Reviews from '../Reviews/Reviews';
 import './Home.css';
 
 const Home = () => {
