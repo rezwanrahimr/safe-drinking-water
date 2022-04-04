@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import useReviews from '../../Hook/useReviews';
 import Reviews from '../Reviews/Reviews';
+import './Home.css';
 
 const Home = () => {
     const [review,setReview] = useReviews();
@@ -27,12 +28,13 @@ const Home = () => {
                </div>
            </div>
            {/* review section */}
-           <div className='container'>
-             <h2>Customar Review</h2>
+           <h2>Customar Review</h2>
+           <div className='container review-itemss'>
+             
              {
              review.slice(0,3).map(reviews => <div className='review-items ' key={reviews.id}>
               <div className='review-item my-5'>
-                  <img src={reviews.picture} alt="" />
+                  <img className='user-img' src={reviews.picture} alt="" />
                   <h4>{reviews.name}</h4>
                   <h4>Rating: {reviews.rating} star</h4>
                   <p>{reviews.text}</p>
@@ -40,8 +42,9 @@ const Home = () => {
               
              </div>)
          }
-         <button className='p-2 rounded px-3 py-1 mt-2 bg-primary border-0 '> <Link className='text-decoration-none text-white' to="/reviews">see all reviews</Link></button>
+         
            </div>
+           <button className='p-2 rounded px-3 py-1 mt-2 bg-primary border-0 '> <Link className='text-decoration-none text-white' to="/reviews">see all reviews</Link></button>
         </div>
     );
 };
