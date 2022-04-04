@@ -11,6 +11,7 @@ const Dashboard = () => {
     return (
         <div className='container mt-5 row'>
             <div className='col-md-6 p-5'>
+            <h5 className='text-center mb-4 fw-bold'>SELL VS INVESTMENT</h5>
             <AreaChart width={530} height={250} data={chartdata}
             margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
             <defs>
@@ -32,6 +33,7 @@ const Dashboard = () => {
             </AreaChart>
  
                 <div className='mt-5 p-5'>
+                    <h5 className='text-center mb-4 fw-bold'>SELL VS REVENUE</h5>
                 <BarChart width={530} height={250} data={chartdata}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month" />
@@ -45,6 +47,7 @@ const Dashboard = () => {
             </div>
             {/* another */}
             <div className='col-md-6 p-5'>
+            <h5 className='text-center mb-4 fw-bold'>SELL VS INVESTMENT</h5>
             <LineChart width={530} height={250} data={chartdata}
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" />
@@ -57,6 +60,7 @@ const Dashboard = () => {
             </LineChart>
 
             <div className='mt-5 p-5'>
+            <h5 className='text-center mb-4 fw-bold'>SELL VS REVENUE</h5>
             <ComposedChart width={530} height={250} data={chartdata}>
             <XAxis dataKey="month" />
             <YAxis />
