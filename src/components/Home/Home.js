@@ -40,7 +40,7 @@ const Home = () => {
               
              </div>)
          }
-         <button className='p-2 rounded px-3 py-1 mt-2 bg-primary border-0 '> <Link className='text-decoration-none text-white' to="/reviews">check reviews</Link></button>
+         <button className='p-2 rounded px-3 py-1 mt-2 bg-primary border-0 '> <Link className='text-decoration-none text-white' to="/reviews">see all reviews</Link></button>
            </div>
         </div>
     );

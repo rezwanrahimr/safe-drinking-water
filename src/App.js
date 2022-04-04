@@ -6,6 +6,7 @@ import Reviews from './components/Reviews/Reviews';
 import Dashboard from './components/Dashboard/Dashboard';
 import Blogs from './components/Blogs/Blogs';
 import About from './components/About/About';
+import Error from './components/Error/Error';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='*' element={<Error></Error>}></Route>
       </Routes>
     </div>
   );
