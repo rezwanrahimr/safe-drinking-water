@@ -6,12 +6,12 @@ import './Reviews.css';
 const Reviews = () => {
  const [review,setReview] = useReviews();
     return (
-        <div>
+        <div className='review-items-cart container'>
            
          {
              review.map(reviews => <div className='review-items ' key={reviews.id}>
               <div className='review-item my-5'>
-                  <img src={reviews.picture} alt="" />
+                  <img className='review-img' src={reviews.picture} alt="" />
                   <h4>{reviews.name}</h4>
                   <h4>Rating: {reviews.rating} star</h4>
                   <p>{reviews.text}</p>
