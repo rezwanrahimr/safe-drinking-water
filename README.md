@@ -4,7 +4,7 @@
 
 
 
-
+.
 🟢 " First, open the cmd of the computer and run the npx create-react-app command to create  a react app. "
 
 🟢 " Then I created a navbar. So I created some components called home, reviews, dashboard, blogs, about. After that I linked up the components with navbar through React Router. "
